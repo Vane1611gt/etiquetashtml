@@ -1,0 +1,57 @@
+
+.header {
+    background-color: orange; 
+    padding: 15px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.titulo {
+    font-family: 'Arial', sans-serif; 
+    font-size: 2em; 
+    color: #333; 
+    margin: 0; 
+}
+
+
+.btn-github {
+    display: inline-block; 
+    padding: 8px 16px;
+    font-size: 0.9em;
+    color: rgb(247, 242, 232); 
+    background-color: #333; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    margin-left: 10px; 
+}
+
+
+.btn-github:hover {
+    background-color: #555; 
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 375px) {
+    .header {
+        flex-direction: row; /* Mantener elementos en fila */
+        justify-content: center; /* Centrar los elementos horizontalmente */
+        text-align: center; /* Centrar el texto */
+        padding: 10px; /* Reducir espaciado interno */
+    }
+    
+    .titulo {
+        font-size: 1.2em; /* Reducir tamaño de fuente */
+    }
+    
+    .btn-github {
+        padding: 6px 12px; /* Reducir espaciado interno */
+        font-size: 0.8em; /* Reducir tamaño de fuente */
+        margin-left: 10px; /* Mantener margen izquierdo */
+    }
+}
+
+
